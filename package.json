@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "cypress": "^13.15.0"
+  },
+
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cypress:run": "cypress run",
+
+    "cypress:headless": "cypress run --config viewportWidth=410 viewportHeight=860 "
+  }
+
+
+
+}

@@ -1,6 +1,6 @@
 describe("template spec", () => {
   beforeEach(() => {
-    cy.visit("http://127.0.0.1:5500/src/index.html");
+    cy.visit("http://127.0.0.1:5500/cypress/src/index.html");
   });
 
   it("envia o formuário com sucesso usando um comando customizado", () => {
@@ -69,8 +69,8 @@ describe("template spec", () => {
   it("acessa a página da política de privacidade removendo o target e então clicando no link", () => {
     cy.get("#privacy a ").invoke("removeAttr", "target").click();
   });
-  it.only("testa a página da política de privacidade de forma independente", () => {
-    cy.visit("http://127.0.0.1:5500/src/privacy.html");
+  it("testa a página da política de privacidade de forma independente", () => {
+    cy.visit("http://127.0.0.1:5500/cypress/src/privacy.html");
     cy.contains("CAC TAT - Política de privacidade").should("be.visible");
   });
 
