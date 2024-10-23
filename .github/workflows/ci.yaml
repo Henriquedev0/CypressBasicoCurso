@@ -23,4 +23,4 @@ jobs:
         CI: true
 
     - name: Run Cypress tests
-      run: npx cypress run --config-file=cypress.config.js
+      run: npx cypress run 
