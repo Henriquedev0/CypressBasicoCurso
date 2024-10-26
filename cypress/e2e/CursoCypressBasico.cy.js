@@ -74,6 +74,13 @@ describe("template spec", () => {
     cy.contains("CAC TAT - Política de privacidade").should("be.visible");
   });
 
+  it("encontrando o  gato escondido 🐈", () => {
+
+    cy.get("#cat").should("be.hidden");
+    cy.get("#cat").invoke("show").should("be.visible");
+
+    
+  });
 
 
   
